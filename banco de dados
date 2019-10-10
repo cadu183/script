@@ -1,0 +1,3 @@
+#!/bin/bash
+wget https://dc596.4shared.com/download/CPmZ5T5Dea/sshplus.sql?tsid=20191010-225004-a4d00132&sbsr=c3499235e041a4d85912d6834e8e3909a25&bip=MTkxLjI1Mi4xMTMuMTAx&lgfp=30
+mysql -uroot -p sshplus < sshplus.sql
