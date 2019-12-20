@@ -7,13 +7,14 @@ apache2 restart
 apt-get install mysql-server -y 
 mysql_install_db
 mysql_secure_installation
+cd /var/www/html && wget https://download1474.mediafire.com/qk3zkxhy78rg/fg2sm8xjtoe8u6n/painel5.zip
+cd /var/www/html && unzip painel5.zip
+cd
 echo '* * * * * root /usr/bin/php /var/www/html/pages/system/cron.php' >> /etc/crontab
 echo '* * * * * root /usr/bin/php /var/www/html/pages/system/cron.ssh.php ' >> /etc/crontab
 echo '* * * * * root /usr/bin/php /var/www/html/pages/system/cron.sms.php' >> /etc/crontab
 echo '* * * * * root /usr/bin/php /var/www/html/pages/system/cron.online.ssh.php' >> /etc/crontab
 echo '10 * * * * root /usr/bin/php /var/www/html/pages/system/cron.servidor.php' >> /etc/crontab
-cd /var/www/html && wget https://dc576.4shared.com/download/H472lTAsiq/PAINELWEB2.zip?tsid=20191010-224028-fb43f7dd&sbsr=0e1ac09f3447a80c40b58707c9f2f9eca25&bip=MTkxLjI1Mi4xMTMuMTAx&lgfp=30
-cd /var/www/html && unzip PAINELWEB2.zip && rm PAINELWEB2.zip && rm index.html
 chmod 777 /var/www/html/admin/pages/servidor
 chmod 777 /var/www/html/admin/pages/bandeirar
 chmod 777 /var/www/html/admin/pages/faturas
