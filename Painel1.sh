@@ -1,4 +1,5 @@
 #!/bin/bash
+cd
 echo "America/Sao_Paulo" > /etc/timezone
 echo ln -fs /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime > /dev/null 2>&1
 echo dpkg-reconfigure --frontend noninteractive tzdata > /dev/null 2>&1
