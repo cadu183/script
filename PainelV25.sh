@@ -1,5 +1,6 @@
 #!/bin/bash
-<html><h1 style="text-align:center;"><font color="blue">Instalando Painel SSH V25</font><br>
+
+cd
 echo "America/Sao_Paulo" > /etc/timezone
 ln -fs /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime > /dev/null 2>&1
 dpkg-reconfigure --frontend noninteractive tzdata > /dev/null 2>&1
